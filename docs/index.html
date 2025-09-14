@@ -13,17 +13,18 @@
       background: #111; /* 검은 배경 */
       color: #fff;
       font-family: Arial, sans-serif;
+      overflow: hidden;
     }
     h1 {
       font-size: 5rem;
-      animation: glow 2s infinite alternate;
+      opacity: 0;
+      transform: translateY(30px); /* 처음엔 아래쪽에 위치 */
+      animation: fadeUp 1s ease-out forwards; /* 1초 동안 올라옴 */
     }
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #00f;
-      }
+    @keyframes fadeUp {
       to {
-        text-shadow: 0 0 20px #fff, 0 0 40px #0ff, 0 0 60px #0ff;
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   </style>
