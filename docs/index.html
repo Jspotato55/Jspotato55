@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Jspotato55</title>
-  <!-- Black Han Sans 폰트 불러오기 -->
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <!-- Titillium Web 폰트 불러오기 -->
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -13,12 +13,15 @@
       justify-content: center;
       align-items: center;
       background: #111; /* 검은 배경 */
-      color: #fff;
-      font-family: 'Black Han Sans', sans-serif; /* 폰트 적용 */
+      font-family: 'Titillium Web', sans-serif;
       overflow: hidden;
     }
     h1 {
       font-size: 6rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00c6ff, #7a00ff); /* 블루 → 퍼플 */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       opacity: 0;
       transform: translateY(30px);
       animation: fadeUp 1s ease-out forwards;
