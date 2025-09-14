@@ -8,18 +8,20 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      font-family: 'Titillium Web', sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    section {
+      height: 100vh; /* 화면 전체 높이 */
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #111; /* 검은 배경 */
-      font-family: 'Titillium Web', sans-serif;
-      overflow: hidden;
     }
     h1 {
       font-size: 6rem;
       font-weight: 700;
-      background: linear-gradient(90deg, #00c6ff, #7a00ff); /* 블루 → 퍼플 */
+      background: linear-gradient(90deg, #00c6ff, #7a00ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       opacity: 0;
@@ -32,9 +34,24 @@
         transform: translateY(0);
       }
     }
+    .projects {
+      flex-direction: column;
+      gap: 2rem;
+      font-size: 2rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Jspotato55</h1>
+  <!-- 첫 화면: 로고 -->
+  <section>
+    <h1>Jspotato55</h1>
+  </section>
+
+  <!-- 두 번째 화면: 프로젝트 목록 -->
+  <section class="projects">
+    <div>프로젝트1</div>
+    <div>프로젝트2</div>
+    <div>프로젝트3</div>
+  </section>
 </body>
 </html>
